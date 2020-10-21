@@ -20,16 +20,21 @@ function App() {
 
   async function getCharacters() {
     await waitFor(100);
-    const firstCharacter = await getCharacterById(1);
-    const secondCharacter = await getCharacterById(2);
+    const firstCharacter = await getCharacterById(5);
+    const secondCharacter = await getCharacterById(6);
+    const thirdCharacter = await getCharacterById(8);
     characters.append(
       Character({
         name: firstCharacter.name,
-        imgSrc: secondCharacter.image,
+        imgSrc: firstCharacter.image,
       }),
       Character({
         name: secondCharacter.name,
         imgSrc: secondCharacter.image,
+      }),
+      Character({
+        name: thirdCharacter.name,
+        imgSrc: thirdCharacter.image,
       })
     );
   }
