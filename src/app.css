@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@400;600&display=swap");
+
 *,
 *::before,
 *::after {
@@ -6,9 +8,11 @@
 
 html {
   font-size: 16px;
+  font-family: "Blinker", sans-serif;
 }
 
 body {
   margin: 0;
   background: darkslategray;
+  font-family: "Blinker", sans-serif;
 }
