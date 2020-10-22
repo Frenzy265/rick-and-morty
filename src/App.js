@@ -17,7 +17,7 @@ function App() {
     className: "button",
     innerText: "Load more characters",
     onclick: () => {
-      loadCharacters(lastName, nextPage);
+      getCharacters(lastName, nextPage);
     },
   });
 
@@ -34,12 +34,14 @@ function App() {
         imgSrc: character.image,
       })
     );
-    characterContainer.innerHTML = "";
+    // characterContainer.innerHTML = "";
     characterContainer.append(...characterElements);
 
     nextPage = characters.info.next?.match(/\d+/)[0];
     loadMoreButton.disabled = !characters.info.next;
     lastName = name;
+
+    // main.append(loadMoreButton);
   }
   const searchBar = createElement("input", {
     className: "searchbar",
