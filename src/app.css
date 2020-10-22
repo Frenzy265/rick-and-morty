@@ -16,3 +16,11 @@ body {
   background: darkslategray;
   font-family: "Blinker", sans-serif;
 }
+
+.searchbar {
+  border-radius: 10px;
+}
+
+.button {
+  background-color: lightcoral;
+}
