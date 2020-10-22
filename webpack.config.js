@@ -1,8 +1,9 @@
-const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+import path from ("path");
+import { CleanWebpackPlugin } from ("clean-webpack-plugin");
+import HtmlWebpackPlugin from ("html-webpack-plugin");
 
 module.exports = {
+  devtool: "inline-source-map",
   plugins: [
     new CleanWebpackPlugin({
       verbose: true,
